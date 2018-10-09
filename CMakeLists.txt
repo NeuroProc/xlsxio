@@ -120,7 +120,7 @@ FOREACH(LINKTYPE ${LINKTYPES})
 ENDFOREACH()
 
 IF(BUILD_TOOLS)
-  ADD_EXECUTABLE(xlsxio_xlsx2csv src/xlsxio_xlsx2csv.c)
+  add_library(xlsxio_xlsx2csv SHARED src/xlsxio_xlsx2csv.c)
   TARGET_LINK_LIBRARIES(xlsxio_xlsx2csv xlsxio_read_${EXELINKTYPE})
   SET(ALLTARGETS ${ALLTARGETS} xlsxio_xlsx2csv)
 

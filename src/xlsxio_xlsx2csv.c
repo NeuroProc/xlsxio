@@ -120,7 +120,7 @@ void show_help ()
   );
 }
 
-int main (int argc, char* argv[])
+int xlsx2csv (int argc, char* argv[])
 {
   int i;
   char* param;
