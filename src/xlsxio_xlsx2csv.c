@@ -24,6 +24,8 @@ THE SOFTWARE.
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+
+#include "xlsxio_xlsx2csv.h"
 #include "xlsxio_read.h"
 #include "xlsxio_version.h"
 
@@ -120,7 +122,7 @@ void show_help ()
   );
 }
 
-int xlsx2csv (int argc, char* argv[])
+DLL_EXPORT_XLSXIO int xlsx2csv (int argc, char* argv[])
 {
   int i;
   char* param;
